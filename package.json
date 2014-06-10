@@ -1,0 +1,26 @@
+{
+    "name": "twitter-sandbox",
+    "version": "0.0.0",
+    "author": "Benjamin Tambourine",
+    "description": "Twitter Sandbox",
+    "homepage": "https://github.com/vtambourine/twitter-sandbox",
+    "repository": {
+        "type": "git",
+        "url": "git://github.com/vtambourine/twitter-sandbox.git"
+    },
+    "bugs": {
+        "url": "https://github.com/vtambourine/twitter-sandbox/issues"
+    },
+    "main": "cli.js",
+    "dependencies": {},
+    "devDependencies": {
+        "chai": "^1.9.1",
+        "mocha": "^1.20.1",
+        "sinon": "^1.10.2"
+    },
+    "scripts": {
+        "test": "mocha --harmony"
+    },
+    "license": "MIT",
+    "private": true
+}
