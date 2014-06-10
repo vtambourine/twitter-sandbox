@@ -13,6 +13,7 @@ module.exports = {
     },
 
     /**
+     * @see {@link http://underscorejs.org/docs/underscore.html#section-84}
      *
      * @param {Object} object
      * @param {...Object} sources
