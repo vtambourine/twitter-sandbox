@@ -1,4 +1,4 @@
-var TwitterAPI = require('./twitter-api');
+var TwitterAPI = require('./lib/twitter-api');
 var Spider = require('./spider');
 var secrets = require('./secrets.json');
 

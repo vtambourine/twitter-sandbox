@@ -1,6 +1,6 @@
 var expect = require('chai').expect;
 var sinon = require('sinon');
-var TwitterAPIOAuth = require('../twitter-api-oauth');
+var TwitterAPIOAuth = require('../lib/twitter-api-oauth');
 
 describe('TwitterAPIOAuth', function () {
     var request;
@@ -24,12 +24,12 @@ describe('TwitterAPIOAuth', function () {
             token: '370773112-GmHxMAgYyLbNEtIKZeRNFsMKPR9EyMZeS9weJAEb',
             tokenSecret: 'LswwdoUaIvS8ltyTt5jkRh4J50vUPVVHtR2YPi5kE'
         });
-        sinon.stub(oauth, 'getNonce').returns('kYjzVBB8Y0ZFabxSWbWovY3uYSQ2pTgmZeNu2VS4cg');
+        sinon.stub(oauth, '_getNonce').returns('kYjzVBB8Y0ZFabxSWbWovY3uYSQ2pTgmZeNu2VS4cg');
     });
 
     after(function () {
         clock.restore();
-        oauth.getNonce.restore();
+        oauth._getNonce.restore();
     });
 
     it('should calculate the correct signature for provided request', function () {

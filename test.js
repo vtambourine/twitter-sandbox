@@ -1,4 +1,4 @@
-var TwitterAPI = require('./twitter-api');
+var TwitterAPI = require('./lib/twitter-api');
 
 var twitter = new TwitterAPI({
     consumerKey: 'FWhxe0MvuSUMqHGNOMmyOV11Q',

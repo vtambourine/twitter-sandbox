@@ -1,5 +1,5 @@
 var expect = require('chai').expect;
-var utils = require('../utils');
+var utils = require('../lib/utils');
 
 describe('utils', function () {
     describe('percentEncode(string)', function () {

@@ -1,7 +1,7 @@
 var EventEmitter = require('events').EventEmitter;
-var TwitterAPI = require('./twitter-api');
+var TwitterAPI = require('./lib/twitter-api');
 var util = require('util');
-var spawn = require('./utils').spawn;
+var spawn = require('./lib/utils').spawn;
 
 var Spider = function (twitter) {
     this.twitter = twitter;
