@@ -47,7 +47,7 @@ describe('TwitterAPIOAuth', function () {
             request = {
                 method: 'post',
                 url: 'https://api.twitter.com/oauth/request_token',
-                parameters: {
+                oauth: {
                     oauth_callback: 'http://localhost/sign-in-with-twitter/'
                 }
             };
