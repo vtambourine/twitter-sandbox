@@ -24,7 +24,19 @@ if (!verifier) {
         console.error(error.stack);
         throw error;
     });
-} else if (verifier) {
+} else if (verifier === 'verify') {
+    var token = process.argv[3];
+    var tokenSecret = process.argv[4];
+    var status = process.argv[5];
+    twitter.verifyCredentials(token, tokenSecret).then(function (data) {
+        console.log('== ver', data);
+    });
+    twitter.updateStatus(token, tokenSecret, status).then(function (data) {
+        console.log('== updated', data);
+    }, function (error) {
+        console.error(error.stack)
+    });
+} else {
     twitter.obtainAccessToken(verifier, token).then(function (data) {
         console.log('get', data);
     });
