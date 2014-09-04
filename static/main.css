@@ -1,0 +1,13 @@
+html,
+body {
+    margin: 0;
+    padding: 0;
+
+    font: 14px/21px Arial, Helvetica, sans-serif;
+}
+
+.page {
+    width: 900px;
+    margin: 0 auto;
+    padding: 30px;
+}
